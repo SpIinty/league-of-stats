@@ -9,12 +9,17 @@ class Ui_login(object):
         self.ui=Ui_ChampListWindow()
         self.ui.setupUi(self.window)
         self.window.show()
-
     def openHistory(self):
-        self.window2=QtWidgets.QMainWindow()
-        self.ui2=matchHistory()
-        self.ui2.setupUi(self.window2,self.summoner_name.text())
-        self.window2.show()
+        try:
+            self.window2=QtWidgets.QMainWindow()
+            self.ui2=matchHistory()
+            self.ui2.setupUi(self.window2,self.summoner_name.text())
+            self.window2.show()
+        except:
+            self.error_dialog = QtWidgets.QErrorMessage()
+            self.error_dialog.showMessage('Wrong summoner name try again')
+
+
         
         
     def setupUi(self, login):
