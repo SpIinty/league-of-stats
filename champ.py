@@ -213,8 +213,8 @@ class Ui_ChampWindow(object):
         self.rune3.setPixmap(QtGui.QPixmap(Rune(self.runelist[3]).png))
         self.rune4.setPixmap(QtGui.QPixmap(Rune(self.runelist[4]).png))
         self.rune5.setPixmap(QtGui.QPixmap(Rune(self.runelist[5]).png))
-        self.BanRate.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt;\">{0}</span></p></body></html>".format(self.banrate)))
-        self.WinRate.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt;\">{0}</span></p></body></html>".format(self.winrate)))
+        self.BanRate.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt;\">{0}%</span></p></body></html>".format(self.banrate*100)))
+        self.WinRate.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt;\">{0}%</span></p></body></html>".format(self.winrate*100)))
         self.Role.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">{0}</span></p></body></html>".format(self.role_name)))
         
     def getstats(self,champion,rank="bronze"):
@@ -247,9 +247,9 @@ class Ui_ChampWindow(object):
         self.champion_name.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">{0}</span></p></body></html>".format(champion.name)))
         self.Role.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">{0}</span></p></body></html>".format(self.role_name)))
         self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:16pt;\">Win Rate</span></p></body></html>"))
-        self.WinRate.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt;\">{0}</span></p></body></html>".format(self.winrate)))
+        self.WinRate.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt;\">{0}%</span></p></body></html>".format(self.winrate*100)))
         self.label_3.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:16pt;\">Ban Rate</span></p></body></html>"))
-        self.BanRate.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt;\">{0}</span></p></body></html>".format(self.banrate)))
+        self.BanRate.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:18pt;\">{0}%</span></p></body></html>".format(self.banrate*100)))
         self.Rank.setItemText(0, _translate("MainWindow", "Bronze"))
         self.Rank.setItemText(1, _translate("MainWindow", "Silver"))
         self.Rank.setItemText(2, _translate("MainWindow", "Gold"))
