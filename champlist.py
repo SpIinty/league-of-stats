@@ -1726,7 +1726,20 @@ class Ui_ChampListWindow(object):
         self.Zilean.clicked.connect(partial(self.openChamp,"Zilean"))
         self.Zoe.clicked.connect(partial(self.openChamp,"Zoe"))
         self.pushButton_145.clicked.connect(partial(self.openChamp,"Zyra"))
-
+        self.Qiyana.clicked.connect(partial(self.openChamp,"Qiyana"))
+        self.Quinn.clicked.connect(partial(self.openChamp,"Quinn"))
+        self.Rakan.clicked.connect(partial(self.openChamp,"Rakan"))
+        self.Rammus.clicked.connect(partial(self.openChamp,"Rammus"))
+        self.RekSai.clicked.connect(partial(self.openChamp,"RekSai"))
+        self.Rell.clicked.connect(partial(self.openChamp,"Rell"))
+        self.Renekton.clicked.connect(partial(self.openChamp,"Renekton"))
+        self.Rengar.clicked.connect(partial(self.openChamp,"Rengar"))
+        self.Riven.clicked.connect(partial(self.openChamp,"Riven"))
+        self.Rumble.clicked.connect(partial(self.openChamp,"Rumble"))
+        self.Ryze.clicked.connect(partial(self.openChamp,"Ryze"))
+        self.Singed.clicked.connect(partial(self.openChamp,"Singed"))
+        self.Talon.clicked.connect(partial(self.openChamp,"Talon"))
+            
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
@@ -1904,7 +1917,7 @@ class Ui_ChampListWindow(object):
         self.XinZhao_2.setText(_translate("MainWindow", "XinZhao"))
         self.Zac.setText(_translate("MainWindow", "Zac"))
         self.Yuumi.setText(_translate("MainWindow", "Yuumi"))
-
+        
             
             
 if __name__ == "__main__":
