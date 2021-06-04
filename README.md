@@ -4,6 +4,6 @@ Img for project
 
 
 list of missing imports from school pc
-pandas PyQy5 riotwatcher 
+pandas PyQt5 riotwatcher 
 list of most import 
-requests json sklearn pandas PyQy5 riotwatcher 
+requests json sklearn pandas PyQt5 riotwatcher 
